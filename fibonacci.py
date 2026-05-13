@@ -1,5 +1,11 @@
-a, b = 0, 1
+n = int(input("Enter number of terms: "))
 
-for i in range(7):
+a = 0
+b = 1
+
+for i in range(n):
     print(a, end=" ")
-    a, b = b, a+b
+
+    c = a + b
+    a = b
+    b = c
